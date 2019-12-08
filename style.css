@@ -16,9 +16,14 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
-a {
+p {
+  margin-bottom: 20px;
+}
+
+.content a {
   display: inline-block;
   text-decoration: none;
   color: var(--main-color);
@@ -26,6 +31,8 @@ a {
   padding: 10px 80px;
   border-radius: 16px;
   font-size: 0.8rem;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 5px #4A3B6C;
 }
 
 i {
@@ -69,7 +76,10 @@ i {
 }
 
 .content {
-  padding: 20px;;
+  /* padding: 20px; */
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 600px) {
