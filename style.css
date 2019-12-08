@@ -2,18 +2,98 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --main-color: hsl(257, 40%, 49%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: white;
+  padding: 10px 80px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+}
+
+i {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 5px;
 }
 
 .landing-page {
-  background-image: url("./images/bg-mobile.svg");
-  background-color: hsl(257, 40%, 49%);
-  background-repeat: no-repeat;
+  background-color: var(--main-color);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.splash {
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.splash-content {
+  width: 80%;
+  min-block-size: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 130px;
+}
+
+.mockup {
+  width: 100%;
+}
+
+.content {
+  padding: 20px;;
 }
 
 @media (min-width: 600px) {
   .landing-page {
     background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+  }
+
+  .splash {
+    background-image: none;
+  }
+
+  .splash-content {
+    height: 80vh;
+    width: 90%;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .content {
+    width: 40%;
   }
 }
