@@ -31,7 +31,6 @@ p {
   padding: 10px 80px;
   border-radius: 16px;
   font-size: 0.8rem;
-  margin-bottom: 40px;
   box-shadow: 2px 2px 5px #4A3B6C;
 }
 
@@ -50,18 +49,20 @@ i {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .splash {
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .splash-content {
-  width: 80%;
-  min-block-size: 400px;
-  margin: 30px auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -76,13 +77,27 @@ i {
 }
 
 .content {
-  /* padding: 20px; */
   width: 80%;
+  height: 50%;
   margin: 0 auto;
   letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-bottom: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 720px) {
+  body {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;;
+  }
+
   .landing-page {
     background-image: url("./images/bg-desktop.svg");
     background-repeat: no-repeat;
@@ -92,18 +107,52 @@ i {
 
   .splash {
     background-image: none;
+    height: 100%;
   }
 
   .splash-content {
-    height: 80vh;
+    height: 100vh;
     width: 90%;
+    margin-left: auto;
   }
 
   .logo {
     width: 250px;
   }
 
+  .mockup {
+    width: 80%;
+  }
+
   .content {
-    width: 40%;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  p {
+    padding: 10px 0;
+    /* margin: 20px 0; */
+  }
+
+  .main-content {
+    padding-right: 40px;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content a {
+    margin-left: 0;
+    font-size: 1rem;
+    padding: 18px 80px;
+    border-radius: 40px;
+  }
+
+  .social {
+    align-self: flex-end;
+    padding-right: 30px;
   }
 }
