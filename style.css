@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   --main-color: hsl(257, 40%, 49%);
+  --shadow-color: hsl(258, 29%, 33%)
 }
 
 body {
@@ -31,7 +32,7 @@ p {
   padding: 10px 80px;
   border-radius: 16px;
   font-size: 0.8rem;
-  box-shadow: 2px 2px 5px #4A3B6C;
+  box-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 i {
